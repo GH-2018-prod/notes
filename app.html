@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Speakers Costa Rica</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="./styles/boostrap.min.css">-->
+    <link rel="stylesheet" href="./styles/sections.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/app.css">
+    
+</head>
+<body>
+    
+    <div class="nav-bar">
+        <nav id="">
+            <div id="img_logo"><img src="img/jen_logo.png "alt=""></div>
+    
+            <input type="checkbox" name="checkbox" id="checkbox" >
+            <label for="checkbox" id="menu-icon" >
+                <i class="fa fa-bars"></i>
+            </label>
+            
+          
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">nosotros</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">planes</a>
+                </li>
+                <li>
+                    <a href="calendar.html">calendar</a>
+                </li>
+                <li><a href="app.html">app</a></li>
+            </ul>
+        </nav> 
+    </div>
+
+    <section>
+        
+
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-4">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+                            <a href="#" class="navbar-brand">Submit account and request</a>
+                        </div>
+                    </nav>
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="formTask">
+                                <div class="form-group">
+                                    <input type="text" id="title" placeholder="Add account number" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="description" cols="80" rows="12" class="form-control" placeholder="Add ticket description"></textarea>
+                                </div>
+                                <button type="submit" id="" class="btn btn-primary btn-block">SUBMIT TICKET</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" >
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+                            <a href="#" class="navbar-brand">PENDING ISSUES</a>
+                        </div>
+                    </nav>
+                    <div id="tasks" class="pending-issues-container">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+                            <a href="#" class="navbar-brand">RESOLVED ISSUES</a>
+                        </div>
+                    </nav>
+                    <div id="resolvedIssues" class="resolved-issues-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <footer>
+        <div id="social">  
+            <i class="fa fa-facebook-square"></i>
+            <p>San Jose, Costa Rica</p>
+            <p>Derechos reservados Native Speakers &#169 2021</p>  
+        </div>
+    </footer>
+    
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+    <script src="scripts/app.js"></script>
+</body>
+</html>

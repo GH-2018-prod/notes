@@ -1,0 +1,11 @@
+.navbar{
+    margin-top: 30px;
+    font-weight: 700;
+}
+.draggable{
+    border: 1px solid red;
+    cursor: move;
+}
+.dragging{
+    opacity: 0.5;
+}

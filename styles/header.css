@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Heebo, sans-serif;
+}
+
+nav{
+    /*position: sticky;*/
+    max-width: 1250px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px auto 10px auto;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    background-color: #fefefe; 
+}
+/*
+.nav-bar{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: #fefefe; 
+}
+nav{  
+    max-width: 1250px;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px auto 10px auto;
+    padding-top: 35px;
+    padding-bottom: 15px;    
+}
+*/
+#img_logo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/2;
+    align-self: center;
+    margin-left: 20px;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column: 2/4;
+    justify-self: center;
+}
+li{
+    align-self: flex-end;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+a{
+
+    font-size: 16px;
+    color: #222;
+    text-decoration: none;
+}
+
+
+nav>ul>li>a:hover{
+    text-decoration: underline; 
+    font-weight: 600;
+    color: #494949; 
+}
+
+#checkbox{
+    display: none;
+}
+#menu-icon{
+    display: none;
+}
+
+
+@media(max-width: 768px){
+    nav{
+        position: relative;
+        z-index: 99;
+    }
+    
+    #menu-icon {
+        display: block; 
+        position: fixed;
+        right: 2%;
+        width: 80px;
+        height: 50px;
+        font-size: 40px;
+        font-weight: 100;
+        border: none;
+        background: none;
+    }
+    #menu-icon > i{
+        color: rgb(90, 87, 70); 
+    }
+    ul{
+        position: fixed;
+        display: none;
+        background: #fefefe;
+        top: 100px;
+        right: 0px;
+        width: 100vw;
+        height: 35vh; 
+    }
+    ul > li{
+        margin: 30px 60px;
+        text-align: right;      
+    }
+
+    #checkbox:checked ~ ul{
+        display: block;
+    }
+}
+
+
+
+
