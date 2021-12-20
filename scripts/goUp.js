@@ -2,8 +2,7 @@ document.getElementById('backToMenu').addEventListener('click', backToMenu);
 function backToMenu(){
     const currentScroll = document.documentElement.scrollTop;
     if(currentScroll > 0){
-        window.scrollTo(0, currentScroll - (currentScroll/2));
-        console.log(currentScroll);
+        window.scrollTo(0, currentScroll - currentScroll ); 
     }
 }
 
