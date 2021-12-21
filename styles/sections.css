@@ -25,7 +25,7 @@ i.fa.fa-angle-up {
     padding-bottom: 35px;
     grid-gap: 20px;
 }
-.left_panel{
+.left-panel{
     display: grid;
     align-content: space-between;
 }
@@ -60,7 +60,7 @@ p{
     color: #ffffff;
 }
 
-#nosotros > h2, .left_panel>h2{
+#nosotros > h2, .left-panel>h2{
 
     margin-top: 3%;
     text-align: center;
@@ -91,10 +91,10 @@ p{
 #metodos>div>p>.read_more{
     color: #494949;
 }
-.left_panel>h2{
+.left-panel>h2{
     text-align: right;
 }
-.left_panel>p{
+.left-panel>p{
     justify-self: center;
     margin-bottom: 5%; 
 }
@@ -109,7 +109,7 @@ p{
     max-width: 625px;
     padding-bottom: 20px;
 }
-#servicios > .left_panel{
+#servicios > .left-panel{
     align-content: space-around;
 }
 #servicios > .right-panel-img{
@@ -216,14 +216,14 @@ footer{
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .left_panel{
+    .left-panel{
         grid-template-columns: 1fr;
         grid-gap: 25px;
         order: 2;
         justify-items: center;
         text-align: center;
     }
-    .left_panel>#metas-cta{
+    .left-panel>#metas-cta{
         justify-self: center;
     }
     #nosotros > h2{
@@ -240,7 +240,7 @@ footer{
     #servicios > div > h2{
         text-align: center;
     }
-    .left_panel>h2{
+    .left-panel>h2{
         text-align: center;
     }
 
