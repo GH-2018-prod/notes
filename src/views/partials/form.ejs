@@ -1,0 +1,36 @@
+<section class="formulario">
+    <div class="form-block">
+        <h2>Contactanos</h2>
+          <!-- Bootstrap 5 starter form -->
+        <form id="contactForm" name="emailForm" action="sendEmail.php" method="POST">
+            <!-- Name input -->
+            <div class="mb-3">
+                <label class="form-label" for="name">Nombre</label>
+                <input class="form-control" name="name" id="name" type="text" placeholder="Nombre"/>
+            </div>
+
+            <!-- Name input -->
+            <div class="mb-3">
+                <label class="form-label" for="number"> Telefono</label>
+                <input class="form-control" name="number" id="number" type="text" placeholder="Numero telefonico"/>
+            </div>
+
+            <!-- Email address input -->
+            <div class="mb-3">
+                <label class="form-label" for="emailAddress">Email Address</label>
+                <input class="form-control" name="emailAddress" id="emailAddress" type="email" placeholder="Email Address"/>
+            </div>
+
+            <!-- Message input -->
+            <div class="mb-3">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+            </div>
+
+            <!-- Form submit button -->
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>

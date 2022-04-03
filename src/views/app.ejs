@@ -1,0 +1,88 @@
+
+    <%- include('partials/header') %>
+
+    <%- include('partials/navigation') %>
+    <section>
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-4">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+                            <a href="#" class="navbar-brand">Submit account and request</a>
+                        </div>
+                    </nav>
+                    <div class="card ">
+                        <div class="card-body">
+                            <form method="post" action="/app" id="formTask">
+                                <div class="form-group">
+                                    <input type="text" name="title" placeholder="Add account number"
+                                        class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="description" cols="80" rows="12" class="form-control"
+                                        placeholder="Add ticket description"></textarea>
+                                </div>
+                                <button type="submit" id="" class="btn btn-primary btn-block">SUBMIT TICKET</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+                            <a href="#" class="navbar-brand">PENDING ISSUES</a>
+                        </div>
+                    </nav>
+                    <div class="container">
+                        <% issues.forEach(function (issue){%>
+                            <div class="card m-4">
+                                <div class="card-header">
+                                    <p>
+                                       <%= issue.title %>
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        <%= issue.description %>
+                                    </p>
+                                </div>
+                                <a href="/resolve/<%= issue.title%>" class="btn btn-danger">
+                                    Resolve
+                                </a>
+                            </div>
+                        <%})%>
+                    </div>                  
+                </div>
+
+                <div class="col-md-4">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+                            <a href="#" class="navbar-brand">RESOLVED ISSUES</a>
+                        </div>
+                    </nav>
+                    <div class="container">
+                        <% resolvedIssues.forEach( function (issue){%>
+                        <div class="card m-4">
+                            <div class="card-header">
+                                <p>
+                                    <%= issue.title %>
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <%= issue.description %>
+                                </p>
+                            </div>
+                            <a id="confirm" href="/delete/<%=issue.title%>"  class="btn btn-danger">
+                                Delete
+                            </a>
+                        </div>
+                       <%})%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <%- include('partials/footer') %>

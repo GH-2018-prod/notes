@@ -1,0 +1,232 @@
+:root{
+    --main-blue: #0c2370c0;
+}
+body{
+    background-color: #d5e6e9;
+}
+section{
+    display: grid;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+.fa-angle-up {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    border: 4px solid #948a8a;
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: 900;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*#block1, #block3, #block4*/
+.text-left, .text-right{ 
+    grid-template-columns: 1fr 1fr;
+    max-width: 1250px;
+    margin: auto;
+    text-align: right; 
+    grid-gap: 30px;
+    
+}
+.left-panel{
+    display: grid;
+    align-content: space-between;
+}
+.right-img>img{
+    max-width: 100%;
+    min-height: 100%;
+}
+h1{
+    font-size: 60px; 
+    font-weight: 400;
+}
+p{
+    font-size: 20px;
+}
+.text-left-cta{
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #78a039;
+    width: 400px;
+    height: 60px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    justify-self: self-end;
+}
+
+/*block 2 styles*/
+
+.text-center{  
+    background-color:var(--main-blue);
+    color: #ffffff;
+    padding: 30px;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+}
+.tc-h2, .lp-h2{
+    font-size: 60px;
+}
+.tc-p{
+    max-width: 900px;
+    margin: 40px auto 40px auto;
+}
+.rm-white, .rm-dark{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+/*styles block3*/
+
+.rm-dark{
+    color: #494949;
+}
+.left-panel>h2{
+    text-align: right;
+}
+.left-panel>p{
+    justify-self: center;
+    margin-bottom: 5%; 
+}
+
+/*styles block4*/
+.text-right{
+    max-width: 100%;
+    background-color:var(--main-blue);
+    text-align: left;
+    padding: 40px;
+}
+.text-right>div{
+    max-width: 625px;
+}
+.text-right>.left-panel{
+    align-content: space-around;
+}
+.text-right> .right-img{
+    justify-self: right;
+}
+.text-right>div>h2, .text-right>div>p{
+    color: #ffffff;
+    text-align: left;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.mb-3{
+    margin-top: 25px;
+    text-align: center;
+}
+.form-block{
+    width: 1000px;
+    justify-self: center; 
+    padding: 20px;
+    margin-top: 20px;
+}
+.form-block>h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*styles block*/
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color:var(--main-blue);
+    color: #ffffff;
+}
+.footer-white{
+    background-color: #ffffff;
+    color: #494949;
+}
+
+#social{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    align-items: center;
+    justify-items: center;
+}
+#social>i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* carousel styles*/
+.d-md-block{
+    padding-bottom: 0px;
+}
+.d-md-block p{
+    margin-bottom: 0px;
+    font-size: small;
+}
+.d-md-block h5{
+    margin-bottom: 0px;
+    font-size: large;
+}
+/*APP SECTION*/
+.h2-app{
+    margin-top: 100px;
+    font-size: 2vw;
+}
+@media(max-width: 999px){
+    .form-block{
+        width: 100%;
+    }
+}
+@media(max-width: 950px){
+    h1{
+        font-size: 45px;
+    } 
+}
+@media(max-width: 768px){
+    .fa-arrow-up{
+        display: none;
+    }
+    .text-left,.text-right{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .text-left-cta{
+        width: 370px;
+    }
+    .left-panel{
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        order: 2;
+        justify-items: center;
+        text-align: center;
+    }
+    .left-panel>.text-left-cta{
+        justify-self: center;
+    }
+    .text-center > h2{
+        font-size: 45px;
+        font-weight: 100; 
+    }
+    .text-right>div, .text-right>.right-img{
+        justify-self: center;
+    }
+    .text-right>div>p,.text-right>div>h2{
+        text-align: center;
+    }
+    .left-panel>h2{
+        text-align: center;
+    }
+    /* GO UP STYLE*/
+    .fa-angle-up{
+        display: none;
+    }
+}
+@media(min-width: 374px){
+    .d-none {
+        display: block!important;
+    }
+}
