@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChelisCorporus Site</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <nav id="nav-items">
+            <img src="img/dog.png" alt="talking dog">
+            <p>If jesus can, you can!</p>
+        </nav>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-4">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+                            <h3>Add Note</h3>
+                        </div>
+                    </nav>
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <form id="formTask">
+                                <div class="form-group">
+                                    <input type="text" id="title" placeholder="Add note" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="description" cols="80" rows="12" class="form-control"
+                                        placeholder="Description"></textarea>
+                                </div>
+                                <button type="submit" id="" class="btn btn-primary btn-block">SUBMIT NOTE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+                            <h3>PENDING</h3>
+                        </div>
+                    </nav>
+                    <div id="tasks" class="pending-issues-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="social">
+            <i class="fa fa-facebook-square"></i>
+            <p>San Jose, Costa Rica</p>
+            <p>Derechos reservados ChelisCorporus &#169 2022</p>
+        </div>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
