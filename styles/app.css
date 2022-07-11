@@ -1,6 +1,12 @@
 *{
     font-family: sans-serif,Heebo;
 }
+.buttons{
+    margin-left: auto;
+}
+.btn{
+    border: 1px solid green;
+}
 nav{
     height: auto;
     display: grid;
@@ -33,10 +39,6 @@ nav:hover{
 }
 h3{
     font-size: 20px;
-}
-.btn-primary, .btn-warning, .btn-success{
-    background-color: #494949;
-    color: #ffffff;
 }
 /* FOOTER */
 footer{

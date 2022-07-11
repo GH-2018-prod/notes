@@ -28,7 +28,6 @@ function getTasks(){
     const tasksToFind = 'tasks';
     const tasks = JSON.parse(localStorage.getItem(tasksToFind));
     const viewTasks = document.getElementById('tasks');
-
     printIssues(tasks, viewTasks, tasksToFind, buttonClass);
 }
 function printIssues(tasks, viewTasks, tasksToFind, buttonClass){
@@ -37,18 +36,25 @@ function printIssues(tasks, viewTasks, tasksToFind, buttonClass){
         const title = tasks[i].title;
         const description = tasks[i].description;
         viewTasks.innerHTML += `
-            <div data-row="${title}" id="sadd" class="card mb-4 mt-2">
-                <div class="card-header">
-                    <p>${title}</p>   
-                </div>
-                <div class="card-body">
-                    <p> ${description}</p>
-                </div>
-                <a class="${buttonClass}" onclick="resolveIssue('${title}','${tasksToFind}')">
+        <div data-row="${title}" id="sadd" class="card mb-4 mt-2">
+            <div class="card-header">
+                <p>${title}</p>   
+            </div>
+            <div id="${title}" class="card-body">
+                <p> ${description}</p>
+            </div>
+            <div class="buttons">
+                <a id="edit${title}" class="btn btn-warning" onclick="edit(this)">
+                    Editar
+                </a>
+                <a class="btn btn-danger" onclick="resolveIssue('${title}','${tasksToFind}')">
                     Borrar
                 </a>
             </div>
-        `;
+        </div>`;
+    const ele = document.getElementById(title);
+    ele.innerText = '';
+    ele.innerText = description;
     }
 }
 function resolveIssue(title, tasksToFind){
@@ -61,6 +67,8 @@ function resolveIssue(title, tasksToFind){
                 localStorage.setItem(tasksToFind, JSON.stringify(tasks));
             }
         }
-    } 
+    }
     getTasks();
 }
+
+
