@@ -5,7 +5,10 @@
     margin-left: auto;
 }
 .btn{
-    border: 1px solid green;
+    border: 1px solid green;  
+}
+.btn-warning{
+    width: 70px;
 }
 nav{
     height: auto;
