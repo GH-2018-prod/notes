@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+=======
+iasoidio oijoas iooisaio siooisaoisio
+>>>>>>> ea9bc1c8e1c7a7cdc7c70c2b40049143d6700696
+Crimson
+Orange
+Blue
+Cyan
+<<<<<<< HEAD
+Yellow
+
+Khaki
+Coral
+=======
+Charcoal
+Khaki
+Coral
+Silver
+Fuchsia
+Purple
+Brown
+Red
+>>>>>>> ea9bc1c8e1c7a7cdc7c70c2b40049143d6700696
